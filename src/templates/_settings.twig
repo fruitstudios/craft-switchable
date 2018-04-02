@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Toggler plugin for Craft CMS
+ *
+ * TogglerField Field Settings
+ *
+ * @author    Fruit Studios
+ * @copyright Copyright (c) 2018 Fruit Studios
+ * @link      https://fruitstudios.co.uk
+ * @package   Toggler
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("fruitstudios\\toggler\\assetbundles\\toggler\\TogglerAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

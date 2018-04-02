@@ -1,0 +1,40 @@
+{
+    "name": "fruitstudios/toggler",
+    "description": "A super simple field type which allows you toggle existing field types.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "toggler"
+    ],
+    "support": {
+        "docs": "https://github.com/fruitstudios/craft-toggler/toggler/blob/master/README.md",
+        "issues": "https://github.com/fruitstudios/craft-toggler/toggler/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fruit Studios",
+            "homepage": "https://fruitstudios.co.uk"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "fruitstudios\\toggler\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Toggler",
+        "handle": "toggler",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/fruitstudios/craft-toggler/toggler/master/CHANGELOG.md",
+        "class": "fruitstudios\\toggler\\Toggler"
+    }
+}
